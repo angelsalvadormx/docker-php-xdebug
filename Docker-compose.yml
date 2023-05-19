@@ -1,0 +1,12 @@
+version: '3.1'
+
+services:
+  php:
+    container_name: 'server_${server_name}'
+    build:
+      context: ./
+      dockerfile: ./Dockerfile
+    ports:
+      - ${port}:80
+    volumes:
+      - .:/var/www/html/
