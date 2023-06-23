@@ -4,7 +4,6 @@
 ```
   copy env-example .env
 ```
-Define el nombre del contenedor y el puerto en tu nuevo archivo .env.
 
 ### 2. Clona tu repositorio dentro de Docker-PIS.
 ```
@@ -15,6 +14,32 @@ Define el nombre del contenedor y el puerto en tu nuevo archivo .env.
 ```
   docker-compose up --build
 ```
-La siguiente vez que quieras correr el docker si todo salio bien, no es necesario agregar el '--build' en el comando.
+> La siguiente vez que quieras correr el docker no es necesario agregar el '--build' en el comando.
 
-### 4. Listo a trabajar.
+## Environment file
+> Asigna valor a tus variables de ambiente
+
+### serverName
+> Define el nombre para tu servidor acorde con la app que vas a usar
+
+### port
+> Define el puerto de salida de la app que vas a usar
+
+### pathApp
+> Define el path de tu proyecto que se va a incluir en el docker
+```env
+pathApp = './NombreDelRepo'
+```
+>Ejemplo
+
+## Xdebug
+> Instala xdebug en vsCode, Busca la extencion xdebug
+
+Si vas a usar xdebug te dejo un ejemplo del launch.json en el archivo launch.Example.json
+> Solo remplaza nameAppFolder por el nombre de la carpeta del repositorio que clonaste 
+
+
+
+## Listo a trabajar.
+
+
