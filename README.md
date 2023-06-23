@@ -7,12 +7,12 @@
   copy env-example .env
 ```
 
-### 2. Clona tu repositorio dentro de Docker-PIS.
+### 2. Clona tu repositorio dentro de docker-php-xdebug.
 ```
   git clone https://github.com/userName/repository.git
 ```
 
-### 3. En tu terminal ejecuta el siguente comando dentro de docker-PIS.
+### 3. En tu terminal ejecuta el siguente comando dentro de docker-php-xdebug.
 ```
   docker-compose up --build
 ```
