@@ -6,6 +6,10 @@ RUN a2enmod rewrite
 
 RUN apt-get update && apt-get install -y nano wget gnupg2
 
+# Mysql
+RUN docker-php-ext-install mysqli && \
+    docker-php-ext-enable mysqli
+
 # Enable session
 RUN echo "session.save_path=\"/tmp\"" >> /usr/local/etc/php/php.ini
 

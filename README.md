@@ -1,3 +1,5 @@
+### PHP 8.1
+
 ## Setup
 
 ### 1. Crea tu propio .env.
